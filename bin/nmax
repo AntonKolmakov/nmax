@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH << File.join(__dir__, "lib")
+
+require "bundler/setup"
+require "nmax"
+
+Nmax.start(ARGV[0], $stdin)
