@@ -15,7 +15,7 @@ describe Nmax do
     expect{subject.call(4)}.to output("First #{4} max numbers is 88888, 10000, 9999, 6778\n").to_stdout
   end
 
-  it 'Raise an exaptions' do
-    subject.call
+  it 'Raises an exception with an alert message' do
+    expect{subject.call}.to output("No parameter N is given!\n").to_stdout
   end
 end
